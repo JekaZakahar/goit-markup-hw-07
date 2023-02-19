@@ -27,7 +27,7 @@
   <body>
     <!-- HEADER -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link logo-text"
@@ -69,8 +69,93 @@
             </li>
           </ul>
         </address>
+        <button class="mob-open-btn" data-menu-open type="button" >
+          <svg class="mob-open-btn-icon" width="32" height="22">
+            <use href="./img/icons.svg#icon-mob-open-btn"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container mob-container">
+          <div>
+            <button class="mob-close-btn" data-menu-close type="button">
+              <svg class="mob-close-icon" width="8" height="8">
+                <use href="./img/icons.svg#icon-modal-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-navigation">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a
+                    href="./index.html"
+                    class="mob-menu-link link regular-text"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link link regular-text"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link link-current link regular-text">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mob-menu-contact">
+              <ul class="mob-menu-contact-list list">
+                <li class="mob-menu-contact-item">
+                  <a
+                    href="tel:+110001111111"
+                    class="mob-menu-tel link regular-text"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-contact-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-menu-email link regular-text"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-social-list list">
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main class="main">
       <!-- HERO -->
@@ -582,5 +667,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

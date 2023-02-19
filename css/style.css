@@ -164,6 +164,10 @@ img {
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* ---------------------- MAIN ----------------------- */
 
 /*--------- Header ---------*/
@@ -176,81 +180,173 @@ img {
   border-bottom: 1px solid var(--accent-color);
 }
 
-.header-logo {
-  margin-right: 76px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo-accent {
   color: var(--primary-brand-color);
 }
 
+.mob-open-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.mob-open-btn-icon {
+  fill: var(--dark-color);
+}
+
 /* Header Navigation */
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.header-navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
 .header-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.header-link {
-  font-weight: 500;
-  color: var(--dark-color);
-  transition: color 250ms var(--transition-cubic);
-}
-
-.header-link:is(:hover, :focus) {
-  color: var(--primary-brand-color);
-}
-
-.link-current {
-  color: var(--primary-brand-color);
-  position: relative;
-}
-
-.link-current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -28px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--primary-brand-color);
+  display: none;
 }
 
 /* Header Contacts */
 
-.header-contact {
-  font-style: normal;
+.header-contact-list {
+  display: none;
 }
 
-.header-contact-list {
+/* Mobile Menu */
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mob-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.container.mob-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* .mob-close-btn {
+  display: block;
+  margin-left: auto;
+} */
+
+.mob-close-btn {
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-bottom: 24px;
+  transition: background-color 250ms var(--transition-cubic);
 }
 
-.header-contact-email,
-.header-contact-tel {
-  transition: color 250ms var(--transition-cubic);
+.mob-close-icon {
+  fill: #000000;
+  transition: fill 250ms var(--transition-cubic);
 }
 
-.header-contact-email:hover,
-.header-contact-tel:hover,
-.header-contact-email:focus,
-.header-contact-tel:focus {
+.mob-close-btn:hover {
+  background-color: var(--pressed-state-color);
+}
+
+.mob-close-btn:hover .mob-close-icon {
+  fill: var(--primary-color);
+}
+
+.mob-close-icon {
+}
+.mob-menu-navigation {
+}
+.mob-menu-list {
+  margin-top: 16px;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  text-transform: capitalize;
+}
+.mob-menu-link.link-current {
   color: var(--primary-brand-color);
+}
+.mob-menu-contact {
+}
+.mob-menu-contact-list {
+  margin-bottom: 48px;
+}
+.mob-menu-contact-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-tel {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.11;
+  color: var(--primary-brand-color);
+  text-transform: capitalize;
+}
+
+.mob-menu-email {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.header-contact-item {
+}
+
+.mob-social-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: calc((100% - 192px) / 3);
+}
+
+.mob-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--transition-cubic);
+}
+
+.mob-social-link:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+}
+
+.mob-social-icon {
+  fill: var(--light-color);
 }
 
 /* --------- HERO ---------- */
