@@ -1,0 +1,140 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1160px;
+  }
+  .container.container-small {
+    max-width: 1160px;
+  }
+  /* ---HERO--- */
+
+  .hero-container {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    min-height: 120px;
+    margin-bottom: 48px;
+  }
+
+  /* ---STRATEGY--- */
+
+  .strategy {
+    max-width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .strategy-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .strategy-icon-box {
+    display: block;
+    height: 112px;
+    background: var(--light-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .strategy-item {
+    max-width: calc((100% - 72px) / 4);
+  }
+
+  .stategy-item-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  /* ---ABOUT--- */
+
+  .about-container {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .about-title {
+    margin-bottom: 72px;
+  }
+  .about-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .about-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /* ---TEAM--- */
+
+  .team {
+    max-width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    max-width: calc((100% - 72px) / 4);
+  }
+
+  /* ---CUSTOMERS--- */
+
+  .customers {
+    max-width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+  }
+
+  /* ---FOOTER--- */
+
+  .footer {
+    max-width: 1440px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-list {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: start;
+    text-align: left;
+    column-gap: 0;
+  }
+
+  .footer-item {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+  }
+
+  .subscribe-form {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    column-gap: 24px;
+  }
+
+  .footer-subscribe-title {
+    text-align: left;
+  }
+
+  .footer-subscribe-email {
+    width: 264px;
+  }
+}

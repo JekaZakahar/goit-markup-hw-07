@@ -1,0 +1,98 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .container.container-small {
+    max-width: 584px;
+  }
+
+  /* ---HERO--- */
+  .hero-container {
+    padding-bottom: 108px;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    min-height: 120px;
+    margin-bottom: 40px;
+  }
+
+  /* ---STRATEGY--- */
+
+  .strategy {
+    max-width: 768px;
+  }
+
+  .strategy-list {
+    column-gap: 24px;
+  }
+
+  .strategy-item {
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  .stategy-item-subtitle {
+    text-align: left;
+  }
+
+  /* ---TEAM--- */
+
+  .team {
+    max-width: 768px;
+    padding-bottom: 104px;
+  }
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .team-item {
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  /* ---CUSTOMERS--- */
+
+  .customers {
+    max-width: 768px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+  }
+
+  /* ---FOOTER--- */
+
+  .footer {
+    max-width: 768px;
+  }
+
+  .footer-container {
+    padding-left: 108px;
+  }
+
+  .footer-list {
+    align-items: baseline;
+    justify-content: start;
+    text-align: left;
+    column-gap: 24px;
+  }
+
+  .subscribe-form {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    column-gap: 24px;
+  }
+
+  .footer-subscribe-title {
+    text-align: left;
+  }
+
+  .footer-subscribe-email {
+    width: 264px;
+  }
+}
