@@ -2,4 +2,18 @@
   .container {
     max-width: 428px;
   }
+
+  .hero-container {
+    background-image: linear-gradient(var(--hero-gradient)),
+      url(../img/hero-image-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: linear-gradient(var(--hero-gradient)),
+        url(../img/hero-image-tab-2x.jpg);
+    }
+  }
 }

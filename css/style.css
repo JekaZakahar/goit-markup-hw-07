@@ -258,12 +258,21 @@ img {
 .hero-container {
   background-color: var(--dark-color);
   background-image: linear-gradient(var(--hero-gradient)),
-    url(../img/hero-image.jpg);
+    url(../img/hero-image-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 112px;
   padding-bottom: 112px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(var(--hero-gradient)),
+      url(../img/hero-image-mob-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -692,8 +701,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+  width: 392px;
+  min-height: 586px;
   padding: 24px;
   background-color: var(--modal-bg-color);
   border-radius: 4px;
