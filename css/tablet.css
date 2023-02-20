@@ -94,7 +94,7 @@
   }
 
   /* ---HERO--- */
-  .hero-container {
+  .hero {
     padding-bottom: 108px;
     background-image: linear-gradient(var(--hero-gradient)),
       url(../img/hero-image.jpg);
@@ -103,7 +103,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-container {
+    .hero {
       background-image: linear-gradient(var(--hero-gradient)),
         url(../img/hero-image-2x.jpg);
     }
@@ -118,10 +118,6 @@
   }
 
   /* ---STRATEGY--- */
-
-  .strategy {
-    max-width: 768px;
-  }
 
   .strategy-list {
     column-gap: 24px;
@@ -138,7 +134,6 @@
   /* ---TEAM--- */
 
   .team {
-    max-width: 768px;
     padding-bottom: 104px;
   }
   .team-list {
@@ -151,8 +146,8 @@
 
   /* ---CUSTOMERS--- */
 
-  .customers {
-    max-width: 768px;
+  .container.customers-container.container-small {
+    max-width: 584px;
   }
 
   .customers-list {
@@ -165,10 +160,6 @@
   }
 
   /* ---FOOTER--- */
-
-  .footer {
-    max-width: 768px;
-  }
 
   .footer-container {
     padding-left: 108px;

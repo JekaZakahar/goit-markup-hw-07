@@ -88,7 +88,7 @@
 
   /* ---HERO--- */
 
-  .hero-container {
+  .hero {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -138,8 +138,13 @@
 
   /* ---ABOUT--- */
 
+  .about {
+  }
+
   .about-container {
     display: block;
+    background-color: var(--primary-color);
+    margin: 0 auto;
     padding-bottom: 120px;
   }
   .about-title {
@@ -170,8 +175,11 @@
 
   /* ---CUSTOMERS--- */
 
+  .container.customers-container.container-small {
+    max-width: 1160px;
+  }
+
   .customers {
-    max-width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
   }

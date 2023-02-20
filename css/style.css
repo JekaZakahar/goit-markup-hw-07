@@ -349,7 +349,7 @@ img {
 
 /* --------- HERO ---------- */
 
-.hero-container {
+.hero {
   background-color: var(--dark-color);
   background-image: linear-gradient(var(--hero-gradient)),
     url(../img/hero-image-mob.jpg);
@@ -358,12 +358,13 @@ img {
   background-size: cover;
   padding-top: 112px;
   padding-bottom: 112px;
+  margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-container {
+  .hero {
     background-image: linear-gradient(var(--hero-gradient)),
       url(../img/hero-image-mob-2x.jpg);
   }
@@ -405,12 +406,10 @@ img {
 /* --------- Strategy ---------- */
 
 .strategy {
-  max-width: 428px;
   background: var(--primary-color);
   padding-top: 96px;
   padding-bottom: 96px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .strategy-list {
@@ -442,12 +441,11 @@ img {
 /* --------- TEAM ---------- */
 
 .team {
-  max-width: 428px;
+  /* max-width: 428px; */
   background-color: var(--light-color);
   padding-top: 96px;
   padding-bottom: 128px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .team-title {
   margin-bottom: 72px;
@@ -514,12 +512,14 @@ img {
 /* -------- CUSTOMERS --------- */
 
 .customers {
-  max-width: 428px;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--primary-color);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.container.customers-container.container-small {
+  max-width: 428px;
 }
 
 .customers-title {
@@ -565,7 +565,6 @@ img {
 /* --------- FOOTER----------- */
 
 .footer {
-  max-width: 428px;
   margin: 0 auto;
   background-color: var(--dark-color);
   padding-top: 96px;
